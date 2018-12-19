@@ -16,7 +16,7 @@ source $(pwd)/lib/args.sh
 For use this script, you define what argument name and variable that will receive value, like example below.
 
 ```bash
-my_key=$(get_param_value "my-amazing-secret-key" "$@")
+my_key=$(bash_args_get_value "my-amazing-secret-key" "$@")
 echo $my_key
 ```
 

@@ -5,5 +5,5 @@
 
 source $(pwd)/../lib/args.sh
 
-arg_foo=$(get_param_value "foo" "$@")
+arg_foo=$(bash_args_get_value "foo" "$@")
 echo $arg_foo
